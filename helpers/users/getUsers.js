@@ -6,7 +6,7 @@ const getUsers = async function () {
     return users;
   } catch (error) {
     console.error(error);
-    throw new Error("Unable to get the list of users.");
+    throw new Error("Something went wrong while trying to get users.");
   }
 };
 

@@ -7,7 +7,7 @@ const isUser = async (user) => {
     return false;
   } catch (error) {
     console.error(error);
-    throw new Error("Unable to find user.");
+    throw new Error("Something went wrong while checking if use exists.");
   }
 };
 

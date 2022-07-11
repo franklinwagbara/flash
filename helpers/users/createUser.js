@@ -7,7 +7,7 @@ const createUser = async (user) => {
     return await newUser.save();
   } catch (error) {
     console.error(error);
-    throw new Error("Unable to create user.");
+    throw new Error("Something went wrong while trying to create user.");
   }
 };
 
